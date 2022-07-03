@@ -4,6 +4,7 @@ import {
     ApolloProvider,
 } from "@apollo/client";
 import ListadoPokemons from "./components/ListadoPokemons";
+import FormularioPokemon from "./components/FormularioPokemon";
 
 const client = new ApolloClient({
     uri: 'http://localhost:4000',
@@ -18,10 +19,13 @@ export default function App() {
             <div className="App">
                 <h1>Pokédex</h1>
                 <div id="bandejaDeEntrada">
-                    <div style={{display: 'flex', flexDirection:'column', flexGrow: 1}}>
+                    <div style={{display: 'flex', flexDirection:'column'}}>
                         <div style={{display: 'flex', flexDirection:'row'}}>
                             <ListadoPokemons/>
                         </div>
+                    </div>
+                    <div style={{display: 'flex', flexDirection:'column', flexGrow: 1}}>
+                        <FormularioPokemon />
                     </div>
                 </div>
             </div>

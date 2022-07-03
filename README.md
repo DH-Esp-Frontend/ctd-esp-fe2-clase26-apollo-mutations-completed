@@ -1,4 +1,4 @@
-# Clase 25 - Apollo Graphql 
+# Clase 26 - Apollo Graphql Mutations 
 
 Para ejecutar el servidor
 
